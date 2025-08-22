@@ -23,14 +23,14 @@ export default function ProjectsSection() {
       codeUrl: "https://github.com/Srushti1722/VisageID-Face-Recognition-System-with-GUI-"
     },
     {
-      title: "Mindful Moments",
-      description: "A mindfulness and wellness tracking app with gentle reminders, mood tracking, and nature-inspired meditation guides for daily well-being.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Wellness and mindfulness app interface",
-      technologies: ["React Native", "Express", "SQLite"],
+      title: "SubSpace1 - User Management System",
+      description: "A comprehensive full-stack authentication and user management platform featuring secure sign-in/sign-up functionality. Built with modern technologies including GraphQL backend and workflow automation capabilities.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      imageAlt: "User authentication and management system interface",
+      technologies: ["TypeScript", "React", "Hasura", "GraphQL", "n8n"],
       color: "muted-terracotta",
-      demoUrl: "#",
-      codeUrl: "#"
+      demoUrl: "https://subspace17222.netlify.app/",
+      codeUrl: "https://github.com/Srushti1722/SubSpace1"
     },
     {
       title: "Village Library System",
