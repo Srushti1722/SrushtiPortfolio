@@ -1,3 +1,5 @@
+import profilePic from "@assets/pic0_1755872328851.jpg";
+
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -23,7 +25,7 @@ export default function HeroSection() {
           {/* Small profile photo */}
           <div className="mb-8">
             <img 
-              src="/attached_assets/pic0_1755872328851.jpg" 
+              src={profilePic} 
               alt="Srushti Tarnalle - Professional headshot" 
               className="w-16 h-16 rounded-full mx-auto shadow-md border-2 border-white object-cover"
               data-testid="profile-photo"
