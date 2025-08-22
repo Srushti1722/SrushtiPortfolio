@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(44, 44%, 95%);
+  --foreground: hsl(34, 25%, 52%);
+  --card: hsl(180, 6.67%, 97.06%);
+  --card-foreground: hsl(34, 25%, 52%);
+  --popover: hsl(44, 44%, 95%);
+  --popover-foreground: hsl(34, 25%, 52%);
+  --primary: hsl(340, 27%, 72%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(34, 25%, 52%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(80, 17%, 94%);
+  --muted-foreground: hsl(34, 25%, 52%);
+  --accent: hsl(340, 27%, 72%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(340, 27%, 80%);
+  --input: hsl(44, 44%, 97%);
+  --ring: hsl(340, 27%, 72%);
+  --chart-1: hsl(340, 27%, 72%);
+  --chart-2: hsl(92, 23%, 67%);
+  --chart-3: hsl(28, 65%, 64%);
+  --chart-4: hsl(92, 40%, 58%);
+  --chart-5: hsl(336, 50%, 64%);
+  --sidebar: hsl(180, 6.67%, 97.06%);
+  --sidebar-foreground: hsl(34, 25%, 52%);
+  --sidebar-primary: hsl(340, 27%, 72%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(340, 27%, 72%);
+  --sidebar-accent-foreground: hsl(0, 0%, 100%);
+  --sidebar-border: hsl(340, 27%, 80%);
+  --sidebar-ring: hsl(340, 27%, 72%);
+  --font-sans: 'Source Sans Pro', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --font-heading: 'Inter', sans-serif;
+  --radius: 1.3rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00), 0px 1px 2px -1px hsl(340, 27%, 72%, 0.00);
+  --shadow: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00), 0px 1px 2px -1px hsl(340, 27%, 72%, 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00), 0px 2px 4px -1px hsl(340, 27%, 72%, 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00), 0px 4px 6px -1px hsl(340, 27%, 72%, 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00), 0px 8px 10px -1px hsl(340, 27%, 72%, 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(340, 27%, 72%, 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+  
+  /* Cottage Core Colors */
+  --dusty-rose: hsl(340, 27%, 72%);
+  --soft-peach: hsl(28, 65%, 76%);
+  --blush-pink: hsl(342, 36%, 82%);
+  --warm-cream: hsl(44, 44%, 95%);
+  --sage-green: hsl(92, 23%, 67%);
+  --muted-terracotta: hsl(28, 40%, 60%);
+  --cottage-brown: hsl(34, 25%, 52%);
+  --soft-gray: hsl(80, 17%, 94%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(200, 6.67%, 91.18%);
+  --card: hsl(228, 9.8%, 10%);
+  --card-foreground: hsl(0, 0%, 85.1%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(200, 6.67%, 91.18%);
+  --primary: hsl(340, 27%, 62%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(195, 15.38%, 94.9%);
+  --secondary-foreground: hsl(34, 25%, 52%);
+  --muted: hsl(0, 0%, 9.41%);
+  --muted-foreground: hsl(210, 3.39%, 46.27%);
+  --accent: hsl(340, 27%, 15%);
+  --accent-foreground: hsl(340, 27%, 62%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5.26%, 14.9%);
+  --input: hsl(208, 27.66%, 18.43%);
+  --ring: hsl(340, 27%, 62%);
+  --chart-1: hsl(340, 27%, 62%);
+  --chart-2: hsl(92, 23%, 57%);
+  --chart-3: hsl(28, 65%, 54%);
+  --chart-4: hsl(92, 40%, 48%);
+  --chart-5: hsl(336, 50%, 54%);
+  --sidebar: hsl(228, 9.8%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85.1%);
+  --sidebar-primary: hsl(340, 27%, 62%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(340, 27%, 15%);
+  --sidebar-accent-foreground: hsl(340, 27%, 62%);
+  --sidebar-border: hsl(206, 15.79%, 26.08%);
+  --sidebar-ring: hsl(340, 27%, 62%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-dusty-rose {
+    background-color: var(--dusty-rose);
+  }
+  
+  .bg-soft-peach {
+    background-color: var(--soft-peach);
+  }
+  
+  .bg-blush-pink {
+    background-color: var(--blush-pink);
+  }
+  
+  .bg-warm-cream {
+    background-color: var(--warm-cream);
+  }
+  
+  .bg-sage-green {
+    background-color: var(--sage-green);
+  }
+  
+  .bg-muted-terracotta {
+    background-color: var(--muted-terracotta);
+  }
+  
+  .bg-cottage-brown {
+    background-color: var(--cottage-brown);
+  }
+  
+  .bg-soft-gray {
+    background-color: var(--soft-gray);
+  }
+  
+  .text-dusty-rose {
+    color: var(--dusty-rose);
+  }
+  
+  .text-soft-peach {
+    color: var(--soft-peach);
+  }
+  
+  .text-blush-pink {
+    color: var(--blush-pink);
+  }
+  
+  .text-warm-cream {
+    color: var(--warm-cream);
+  }
+  
+  .text-sage-green {
+    color: var(--sage-green);
+  }
+  
+  .text-muted-terracotta {
+    color: var(--muted-terracotta);
+  }
+  
+  .text-cottage-brown {
+    color: var(--cottage-brown);
+  }
+  
+  .text-soft-gray {
+    color: var(--soft-gray);
+  }
+  
+  .border-dusty-rose {
+    border-color: var(--dusty-rose);
+  }
+  
+  .hover\:bg-dusty-rose\/90:hover {
+    background-color: hsl(340, 27%, 72%, 0.9);
+  }
+  
+  .hover\:bg-sage-green\/90:hover {
+    background-color: hsl(92, 23%, 67%, 0.9);
+  }
+  
+  .hover\:bg-muted-terracotta\/90:hover {
+    background-color: hsl(28, 40%, 60%, 0.9);
+  }
+  
+  .bg-dusty-rose\/20 {
+    background-color: hsl(340, 27%, 72%, 0.2);
+  }
+  
+  .bg-blush-pink\/20 {
+    background-color: hsl(342, 36%, 82%, 0.2);
+  }
+  
+  .bg-sage-green\/20 {
+    background-color: hsl(92, 23%, 67%, 0.2);
+  }
+  
+  .bg-muted-terracotta\/20 {
+    background-color: hsl(28, 40%, 60%, 0.2);
+  }
+  
+  .bg-white\/60 {
+    background-color: hsl(0, 0%, 100%, 0.6);
+  }
+  
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+}
