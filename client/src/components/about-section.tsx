@@ -1,4 +1,5 @@
 import { Download } from "lucide-react";
+import personalPhoto from "@assets/pic_1755872774123.jpg";
 
 export default function AboutSection() {
   return (
@@ -35,8 +36,8 @@ export default function AboutSection() {
           
           <div className="lg:order-first">
             <img 
-              src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Cozy workspace with plants and natural lighting" 
+              src={personalPhoto} 
+              alt="Srushti enjoying a beautiful mountain view" 
               className="rounded-2xl shadow-xl w-full h-auto"
               data-testid="img-workspace"
             />
