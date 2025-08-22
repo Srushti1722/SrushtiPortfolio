@@ -21,8 +21,9 @@ export default function AboutSection() {
             
             <div className="mt-8">
               <a 
-                href="/resume.pdf" 
-                download 
+                href="https://drive.google.com/file/d/1oYbNekjEgapYDOI5lV4beHvB945IBmr5/view?usp=drive_link" 
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="inline-flex items-center bg-sage-green text-white px-6 py-3 rounded-full hover:bg-sage-green/90 transition-all duration-300 shadow-lg"
                 data-testid="button-download-resume"
               >
