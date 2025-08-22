@@ -23,8 +23,8 @@ export default function HeroSection() {
           {/* Small profile photo */}
           <div className="mb-8">
             <img 
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" 
-              alt="Professional headshot" 
+              src="/attached_assets/pic0_1755872328851.jpg" 
+              alt="Srushti Tarnalle - Professional headshot" 
               className="w-16 h-16 rounded-full mx-auto shadow-md border-2 border-white object-cover"
               data-testid="profile-photo"
             />
