@@ -13,7 +13,7 @@ export default function Footer() {
             />
           </div>
           <p className="text-warm-cream/80 mb-2" data-testid="text-copyright">
-            © 2024 Sarah Developer. Crafted with care and cottage charm.
+            © 2024 Srushti Tarnalle. Crafted with care and cottage charm.
           </p>
           <p className="text-warm-cream/60 text-sm" data-testid="text-tagline">
             Built with love, nature inspiration, and lots of tea ☕

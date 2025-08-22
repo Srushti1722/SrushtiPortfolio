@@ -31,7 +31,7 @@ export default function HeroSection() {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-cottage-brown mb-6">
-            Hello, I'm <span className="text-dusty-rose">Sarah</span>
+            Hello, I'm <span className="text-dusty-rose">Srushti Tarnalle</span>
           </h1>
           <p className="text-xl md:text-2xl text-cottage-brown/80 mb-8 leading-relaxed">
             Software Developer & Engineer crafting beautiful, functional experiences
