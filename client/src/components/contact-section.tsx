@@ -1,31 +1,36 @@
-import { Mail, Linkedin, Github, Twitter, Instagram, Dribbble } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, Dribbble } from "lucide-react";
 
 export default function ContactSection() {
   const contactMethods = [
     {
       icon: Mail,
       title: "Email",
-      value: "hello@sarahdeveloper.com",
+      value: "srushtidt03@gmail.com",
       color: "dusty-rose"
+    },
+    {
+      icon: Phone,
+      title: "Phone",
+      value: "+91-7975924066",
+      color: "sage-green"
     },
     {
       icon: Linkedin,
       title: "LinkedIn", 
-      value: "/in/sarahdeveloper",
-      color: "sage-green"
+      value: "www.linkedin.com/in/srushti-d-t-2a845526",
+      color: "muted-terracotta"
     },
     {
       icon: Github,
       title: "GitHub",
-      value: "@sarahcodes",
-      color: "muted-terracotta"
+      value: "https://github.com/Srushti1722",
+      color: "blush-pink"
     }
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: "#", color: "dusty-rose" },
-    { icon: Instagram, href: "#", color: "sage-green" },
-    { icon: Dribbble, href: "#", color: "muted-terracotta" }
+    { icon: Github, href: "https://github.com/Srushti1722", color: "dusty-rose" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/srushti-d-t-2a845526", color: "sage-green" }
   ];
 
   return (
@@ -37,7 +42,7 @@ export default function ContactSection() {
           Whether it's a new venture or an existing project that needs a gentle touch, let's chat!
         </p>
         
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {contactMethods.map((method, index) => {
             const IconComponent = method.icon;
             return (
