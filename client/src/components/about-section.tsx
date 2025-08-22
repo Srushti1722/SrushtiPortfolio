@@ -1,11 +1,10 @@
 import { Download } from "lucide-react";
-import personalPhoto from "@assets/pic_1755872774123.jpg";
 
 export default function AboutSection() {
   return (
     <section id="about" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto">
           <div>
             <h2 className="text-4xl font-heading font-bold text-cottage-brown mb-6">About Me</h2>
             <div className="space-y-6 text-cottage-brown/80 leading-relaxed">
@@ -32,15 +31,6 @@ export default function AboutSection() {
                 Download Resume
               </a>
             </div>
-          </div>
-          
-          <div className="lg:order-first">
-            <img 
-              src={personalPhoto} 
-              alt="Srushti enjoying a beautiful mountain view" 
-              className="rounded-2xl shadow-xl w-full h-auto"
-              data-testid="img-workspace"
-            />
           </div>
         </div>
       </div>
