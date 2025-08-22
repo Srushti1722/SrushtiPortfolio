@@ -3,14 +3,14 @@ import { ExternalLink, Github } from "lucide-react";
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Garden Planner App",
-      description: "A React-based application that helps users plan and track their garden layouts, with features for crop rotation, seasonal planning, and harvest tracking.",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Clean and modern web application interface",
-      technologies: ["React", "Node.js", "MongoDB"],
+      title: "AllerLens - Allergy Ingredient Checker",
+      description: "A smart application that detects allergy-causing ingredients in products by uploading images of ingredient lists. Uses OCR technology to extract text and flags allergens against personal allergy profiles.",
+      image: "https://images.unsplash.com/photo-1576671081837-49000212a370?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      imageAlt: "Food allergy checking application interface",
+      technologies: ["React", "Python", "Flask", "OCR", "SQLite"],
       color: "blush-pink",
-      demoUrl: "#",
-      codeUrl: "#"
+      demoUrl: "https://aller-lens-allergy-ingredient-check.vercel.app/",
+      codeUrl: "https://github.com/Srushti1722/AllerLens-Allergy-Ingredient-Checker"
     },
     {
       title: "Cozy Recipe Keeper",
