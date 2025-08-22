@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
+import visageIdImage from "@assets/visageid_1755872750232.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -15,7 +16,7 @@ export default function ProjectsSection() {
     {
       title: "VisageID - Face Recognition System",
       description: "A video-based, dynamic face recognition system with an intuitive GUI designed for seamless identity verification and facial database management. Features real-time detection using LBPH algorithm and user registration capabilities.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      image: visageIdImage,
       imageAlt: "Face recognition and biometric security system interface",
       technologies: ["Python", "OpenCV", "SQLite", "Tkinter", "NumPy"],
       color: "sage-green",
