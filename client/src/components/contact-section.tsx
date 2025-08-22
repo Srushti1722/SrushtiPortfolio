@@ -9,24 +9,28 @@ function ContactSection() {
       icon: Mail,
       title: "Email",
       value: "srushtidt03@gmail.com",
+      href: "mailto:srushtidt03@gmail.com",
       color: "dusty-rose"
     },
     {
       icon: Phone,
       title: "Phone",
       value: "+91-7975924066",
+      href: "tel:+917975924066",
       color: "sage-green"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
       value: "www.linkedin.com/in/srushti-d-t-2a845526",
+      href: "https://www.linkedin.com/in/srushti-d-t-2a845526",
       color: "muted-terracotta"
     },
     {
       icon: Github,
       title: "GitHub",
       value: "https://github.com/Srushti1722",
+      href: "https://github.com/Srushti1722",
       color: "blush-pink"
     }
   ];
@@ -60,9 +64,16 @@ function ContactSection() {
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {method.title}
                 </h3>
-                <p className="text-gray-600" data-testid={`text-${method.title.toLowerCase()}`}>
+                {/* Updated to make the value a clickable link */}
+                <a
+                  href={method.href}
+                  className="text-gray-600 text-sm break-all hover:underline"
+                  target={method.title === "Email" || method.title === "Phone" ? "_self" : "_blank"}
+                  rel="noopener noreferrer"
+                  data-testid={`text-${method.title.toLowerCase()}`}
+                >
                   {method.value}
-                </p>
+                </a>
               </div>
             );
           })}
