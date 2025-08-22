@@ -9,19 +9,13 @@ export default function AboutSection() {
             <h2 className="text-4xl font-heading font-bold text-cottage-brown mb-6">About Me</h2>
             <div className="space-y-6 text-cottage-brown/80 leading-relaxed">
               <p>
-                I'm a software developer with a passion for creating digital experiences that feel as warm and 
-                inviting as a cottage garden. My journey began with a fascination for problem-solving and has 
-                evolved into a love for crafting beautiful, functional applications.
+                I'm a software developer with a passion for creating functional and engaging digital experiences. My journey began with a fascination for problem-solving, which has evolved into a love for building clean, maintainable, and reliable applications.
               </p>
               <p>
-                When I'm not coding, you'll find me tending to my garden, reading by the fireplace, or exploring 
-                nature trails. This connection to the natural world influences my approach to development – 
-                creating solutions that are both sustainable and delightful.
+                When I'm not coding, you'll often find me baking, reading, or exploring nature trails. These hobbies inspire my approach to development—careful, precise, and thoughtful, creating solutions that are both effective and enjoyable to use.
               </p>
               <p>
-                I believe in writing clean, maintainable code that grows gracefully over time, much like a 
-                well-tended garden. My goal is to build applications that not only solve problems but also 
-                bring a little joy to users' daily lives.
+                I enjoy building backend systems, APIs, and exploring functional programming, always aiming to write code that is sustainable and grows gracefully over time. My goal is to create applications that solve problems while bringing a touch of delight to users.
               </p>
             </div>
             
