@@ -1,5 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import visageIdImage from "@assets/visageid_1755872750232.png";
+import leaderboardImage from "@assets/image_1755873069652.png";
 
 export default function ProjectsSection() {
   const projects = [
@@ -36,7 +37,7 @@ export default function ProjectsSection() {
     {
       title: "Interactive Leaderboard System",
       description: "A dynamic full-stack leaderboard application where users can claim random points, add new participants, and track rankings in real-time. Features comprehensive points history and user management with cloud deployment.",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      image: leaderboardImage,
       imageAlt: "Interactive leaderboard and scoring system interface",
       technologies: ["JavaScript", "Node.js", "MongoDB", "CSS", "Vercel"],
       color: "blush-pink",
