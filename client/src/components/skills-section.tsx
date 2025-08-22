@@ -6,19 +6,19 @@ export default function SkillsSection() {
       icon: Palette,
       title: "Frontend Development",
       color: "blush-pink",
-      skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "SASS", "Figma"]
+      skills: ["JavaScript", "HTML", "CSS", "React", "Tailwind CSS", "jQuery"]
     },
     {
       icon: Server,
       title: "Backend Development", 
       color: "sage-green",
-      skills: ["Node.js", "Python", "Express", "Django", "PostgreSQL", "MongoDB"]
+      skills: ["Java", "Python", "Node.js", "Express.js", "PHP", "Flask", "REST APIs", "VBA"]
     },
     {
       icon: Wrench,
-      title: "Tools & DevOps",
+      title: "Tools & Technologies",
       color: "muted-terracotta", 
-      skills: ["Git", "Docker", "AWS", "CI/CD", "Jest", "Webpack"]
+      skills: ["Git", "GitHub", "Docker", "AWS", "Kubernetes", "CI/CD", "Postman", "MongoDB", "MySQL", "Firebase"]
     }
   ];
 
