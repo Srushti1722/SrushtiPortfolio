@@ -33,14 +33,14 @@ export default function ProjectsSection() {
       codeUrl: "https://github.com/Srushti1722/SubSpace1"
     },
     {
-      title: "Village Library System",
-      description: "A community library management system with book lending, reading recommendations, and social features that bring the community together around books.",
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Digital library management system interface",
-      technologies: ["Django", "JavaScript", "PostgreSQL"],
+      title: "Interactive Leaderboard System",
+      description: "A dynamic full-stack leaderboard application where users can claim random points, add new participants, and track rankings in real-time. Features comprehensive points history and user management with cloud deployment.",
+      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      imageAlt: "Interactive leaderboard and scoring system interface",
+      technologies: ["JavaScript", "Node.js", "MongoDB", "CSS", "Vercel"],
       color: "blush-pink",
-      demoUrl: "#",
-      codeUrl: "#"
+      demoUrl: "https://leaderboard-ochx.vercel.app/",
+      codeUrl: "https://github.com/Srushti1722/Leaderboard"
     }
   ];
 
