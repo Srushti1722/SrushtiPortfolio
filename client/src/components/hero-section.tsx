@@ -27,7 +27,7 @@ export default function HeroSection() {
             <img 
               src={profilePic} 
               alt="Srushti Tarnalle - Professional headshot" 
-              className="w-24 h-24 rounded-full mx-auto shadow-md border-2 border-white object-cover"
+              className="w-24 h-24 rounded-xl mx-auto shadow-md border-2 border-white object-cover"
               data-testid="profile-photo"
             />
           </div>

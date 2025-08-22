@@ -63,7 +63,7 @@ export default function ProjectsSection() {
               <img 
                 src={project.image}
                 alt={project.imageAlt}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-center object-cover group-hover:scale-105 transition-transform duration-300"
                 data-testid={`img-project-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
               />
               <div className="p-6">
