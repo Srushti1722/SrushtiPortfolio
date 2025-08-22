@@ -13,14 +13,14 @@ export default function ProjectsSection() {
       codeUrl: "https://github.com/Srushti1722/AllerLens-Allergy-Ingredient-Checker"
     },
     {
-      title: "Cozy Recipe Keeper",
-      description: "A digital cookbook that brings the warmth of handwritten recipes to the digital age, with family sharing features and ingredient shopping lists.",
-      image: "https://images.unsplash.com/photo-1512317049220-d3c6fcaf6681?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Digital recipe book application with warm design",
-      technologies: ["Vue.js", "Python", "PostgreSQL"],
+      title: "VisageID - Face Recognition System",
+      description: "A video-based, dynamic face recognition system with an intuitive GUI designed for seamless identity verification and facial database management. Features real-time detection using LBPH algorithm and user registration capabilities.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500",
+      imageAlt: "Face recognition and biometric security system interface",
+      technologies: ["Python", "OpenCV", "SQLite", "Tkinter", "NumPy"],
       color: "sage-green",
       demoUrl: "#",
-      codeUrl: "#"
+      codeUrl: "https://github.com/Srushti1722/VisageID-Face-Recognition-System-with-GUI-"
     },
     {
       title: "Mindful Moments",
