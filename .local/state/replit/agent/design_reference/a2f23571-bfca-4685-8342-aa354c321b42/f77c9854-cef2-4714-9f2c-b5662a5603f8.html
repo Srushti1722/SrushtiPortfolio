@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Chen - Software Developer & Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cottage-cream': '#FEFDFB',
+                        'cottage-gray': '#F5F4F2',
+                        'cottage-taupe': '#E8E4DC',
+                        'cottage-beige': '#DDD8CE',
+                        'cottage-sage': '#9CAF88',
+                        'cottage-charcoal': '#4A4A4A',
+                        'cottage-dark': '#2D2D2D'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-cottage-cream text-cottage-dark font-sans">
+    
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [sticky navigation with smooth scroll] -->
+    <nav class="fixed top-0 w-full bg-cottage-cream/95 backdrop-blur-sm z-50 border-b border-cottage-taupe/30">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="font-semibold text-lg text-cottage-dark">Sarah Chen</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-cottage-charcoal hover:text-cottage-sage transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-cottage-charcoal hover:text-cottage-sage transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-cottage-charcoal hover:text-cottage-sage transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-cottage-charcoal hover:text-cottage-sage transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-cottage-charcoal hover:text-cottage-sage transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-cottage-charcoal">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: Hero [main introduction with profile photo] -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 pb-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="mb-8">
+                <!-- Small professional headshot of a software developer -->
+                <img src="https://pixabay.com/get/gacf399d822b8a1962c85e9787229e47d9d7e32f4a188af6eab1f28bdd7aabc486a0247ab28631a9e8603ca204f4aa0d24e191d4eb749a7da4de05b4199daff37_1280.jpg" 
+                     alt="Sarah Chen profile photo" 
+                     class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-cottage-gray"
+                     data-mock="true">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-light text-cottage-dark mb-6 leading-tight">
+                Hi, I'm <span class="font-medium text-cottage-sage">Sarah Chen</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-cottage-charcoal mb-8 max-w-3xl mx-auto leading-relaxed">
+                Software Developer & Engineer crafting digital experiences with clean code and thoughtful design
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="#projects" class="bg-cottage-sage text-white px-8 py-3 rounded-full hover:bg-cottage-sage/90 transition-all duration-300 shadow-md hover:shadow-lg">
+                    View My Work
+                </a>
+                <a href="#" class="border-2 border-cottage-taupe text-cottage-charcoal px-8 py-3 rounded-full hover:bg-cottage-taupe transition-all duration-300 flex items-center gap-2">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- About Section -->
+    <!-- @COMPONENT: About [personal story and background] -->
+    <section id="about" class="py-20 bg-cottage-gray">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-light text-cottage-dark mb-8">About Me</h2>
+                    <div class="space-y-6 text-lg text-cottage-charcoal leading-relaxed">
+                        <p data-mock="true">
+                            I'm a passionate software developer with 5+ years of experience building scalable web applications and solving complex technical challenges. My journey began with a Computer Science degree, but it was my curiosity about how technology can improve people's lives that truly drives my work.
+                        </p>
+                        <p data-mock="true">
+                            When I'm not coding, you'll find me exploring nature trails, experimenting with sustainable living practices, or contributing to open-source projects. I believe in writing clean, maintainable code and creating user experiences that feel both intuitive and delightful.
+                        </p>
+                        <p data-mock="true">
+                            I'm always eager to learn new technologies and collaborate with teams that share my passion for innovation and quality craftsmanship.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- Minimalist workspace with natural lighting and plants -->
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Clean minimalist workspace" 
+                         class="rounded-2xl shadow-xl w-full h-auto"
+                         data-mock-image="true">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About -->
+
+    <!-- Skills Section -->
+    <!-- @COMPONENT: Skills [technologies and expertise showcase] -->
+    <section id="skills" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-light text-cottage-dark mb-6">Skills & Technologies</h2>
+                <p class="text-lg text-cottage-charcoal max-w-2xl mx-auto">
+                    A diverse toolkit built through continuous learning and hands-on experience
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cottage-dark mb-3">Frontend Development</h3>
+                    <p class="text-cottage-charcoal mb-4">Modern, responsive user interfaces</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">React</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">TypeScript</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Tailwind</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Next.js</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cottage-dark mb-3">Backend Development</h3>
+                    <p class="text-cottage-charcoal mb-4">Scalable server-side solutions</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Node.js</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Python</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cottage-dark mb-3">DevOps & Cloud</h3>
+                    <p class="text-cottage-charcoal mb-4">Deployment and infrastructure</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">AWS</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Docker</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">CI/CD</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Git</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cottage-dark mb-3">Development Tools</h3>
+                    <p class="text-cottage-charcoal mb-4">Productivity and collaboration</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">VS Code</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Figma</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Jira</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Slack</span>
+                    </div>
+                </div>
+
+                <!-- Testing -->
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cottage-dark mb-3">Testing & Quality</h3>
+                    <p class="text-cottage-charcoal mb-4">Ensuring code reliability</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Jest</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Cypress</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">ESLint</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Prettier</span>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cottage-dark mb-3">Design & UX</h3>
+                    <p class="text-cottage-charcoal mb-4">User-centered design thinking</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">UI/UX</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Responsive</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">A11y</span>
+                        <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Skills -->
+
+    <!-- Projects Section -->
+    <!-- @COMPONENT: Projects [portfolio showcase with descriptions] -->
+    <section id="projects" class="py-20 bg-cottage-gray">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-light text-cottage-dark mb-6">Featured Projects</h2>
+                <p class="text-lg text-cottage-charcoal max-w-2xl mx-auto">
+                    A selection of work that showcases my technical skills and creative problem-solving
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-cottage-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <!-- Modern eco-friendly sustainable living app interface mockup -->
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="EcoTrack app interface" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                         data-mock-image="true">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-cottage-dark mb-3" data-mock="true">EcoTrack</h3>
+                        <p class="text-cottage-charcoal mb-4 leading-relaxed" data-mock="true">
+                            A sustainable living app that helps users track their carbon footprint and discover eco-friendly alternatives. Built with React Native and Node.js.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">React Native</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Node.js</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">MongoDB</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-cottage-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <!-- Clean minimalist task management dashboard interface -->
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="TaskFlow dashboard" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                         data-mock-image="true">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-cottage-dark mb-3" data-mock="true">TaskFlow</h3>
+                        <p class="text-cottage-charcoal mb-4 leading-relaxed" data-mock="true">
+                            A collaborative project management platform with real-time updates and intuitive kanban boards. Features team analytics and time tracking.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Express</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Socket.io</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-cottage-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <!-- Beautiful nature-inspired meditation app interface with soft natural elements -->
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="MindfulSpace meditation app" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                         data-mock-image="true">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-cottage-dark mb-3" data-mock="true">MindfulSpace</h3>
+                        <p class="text-cottage-charcoal mb-4 leading-relaxed" data-mock="true">
+                            A mindfulness and meditation app with guided sessions, progress tracking, and beautiful nature soundscapes. Designed for daily wellness practices.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">PWA</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Web Audio</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-cottage-cream rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
+                    <!-- Modern data visualization dashboard with clean charts and analytics -->
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+                         alt="DataViz analytics platform" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                         data-mock-image="true">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold text-cottage-dark mb-3" data-mock="true">DataViz Pro</h3>
+                        <p class="text-cottage-charcoal mb-4 leading-relaxed" data-mock="true">
+                            An interactive data visualization platform that transforms complex datasets into insightful charts and dashboards. Built for business intelligence.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">D3.js</span>
+                            <span class="px-3 py-1 bg-cottage-taupe text-cottage-charcoal text-sm rounded-full">FastAPI</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fab fa-github"></i>
+                                Code
+                            </a>
+                            <a href="#" class="text-cottage-sage hover:text-cottage-sage/80 transition-colors flex items-center gap-2">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center gap-2 text-cottage-sage hover:text-cottage-sage/80 transition-colors font-medium">
+                    View More Projects
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Projects -->
+
+    <!-- Contact Section -->
+    <!-- @COMPONENT: Contact [contact information and social links] -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-light text-cottage-dark mb-6">Let's Connect</h2>
+            <p class="text-lg text-cottage-charcoal mb-12 max-w-2xl mx-auto leading-relaxed">
+                I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to chat about technology, feel free to reach out.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="font-semibold text-cottage-dark mb-2">Email</h3>
+                    <a href="mailto:sarah.chen@email.com" class="text-cottage-charcoal hover:text-cottage-sage transition-colors" data-mock="true">
+                        sarah.chen@email.com
+                    </a>
+                </div>
+
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="font-semibold text-cottage-dark mb-2">Phone</h3>
+                    <a href="tel:+1234567890" class="text-cottage-charcoal hover:text-cottage-sage transition-colors" data-mock="true">
+                        +1 (234) 567-8900
+                    </a>
+                </div>
+
+                <div class="bg-cottage-gray rounded-2xl p-8 shadow-sm">
+                    <div class="text-cottage-sage text-3xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-semibold text-cottage-dark mb-2">Location</h3>
+                    <span class="text-cottage-charcoal" data-mock="true">San Francisco, CA</span>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="w-12 h-12 bg-cottage-gray rounded-full flex items-center justify-center text-cottage-charcoal hover:bg-cottage-sage hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-cottage-gray rounded-full flex items-center justify-center text-cottage-charcoal hover:bg-cottage-sage hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-cottage-gray rounded-full flex items-center justify-center text-cottage-charcoal hover:bg-cottage-sage hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-cottage-gray rounded-full flex items-center justify-center text-cottage-charcoal hover:bg-cottage-sage hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [simple footer with copyright] -->
+    <footer class="py-8 bg-cottage-gray border-t border-cottage-taupe/30">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-cottage-charcoal">
+                © 2024 Sarah Chen. Designed and built with <span class="text-cottage-sage">♡</span> and clean code.
+            </p>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement smooth scrolling navigation
+        (function() {
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 80; // Account for fixed nav
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // TODO: Implement mobile menu toggle functionality
+            // TODO: Add scroll-to-top functionality
+            // TODO: Implement section highlighting on scroll
+        })();
+    </script>
+</body>
+</html>

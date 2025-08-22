@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio - Cottage Core Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dusty-rose': '#D4A5A5',
+                        'soft-peach': '#F5C6A0', 
+                        'blush-pink': '#F4B6C2',
+                        'warm-cream': '#F9F3E9',
+                        'sage-green': '#A8B5A0',
+                        'muted-terracotta': '#C8956D',
+                        'cottage-brown': '#8B7355',
+                        'soft-gray': '#F5F5F0'
+                    },
+                    fontFamily: {
+                        'heading': ['Inter', 'sans-serif'],
+                        'body': ['Source Sans Pro', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-warm-cream font-body text-cottage-brown">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-warm-cream/95 backdrop-blur-sm z-50 border-b border-dusty-rose/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-heading font-semibold text-cottage-brown">Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-cottage-brown hover:text-dusty-rose transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-cottage-brown hover:text-dusty-rose transition-colors duration-300">About</a>
+                    <a href="#skills" class="text-cottage-brown hover:text-dusty-rose transition-colors duration-300">Skills</a>
+                    <a href="#projects" class="text-cottage-brown hover:text-dusty-rose transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="text-cottage-brown hover:text-dusty-rose transition-colors duration-300">Contact</a>
+                </div>
+                <button class="md:hidden text-cottage-brown">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <!-- Soft natural background texture -->
+        <div class="absolute inset-0 opacity-5" style="background-image: url('https://images.unsplash.com/photo-1519904981063-b0cf448d479e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080'); background-size: cover; background-position: center;"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-dusty-rose/20">
+                <!-- Small profile photo -->
+                <div class="mb-8">
+                    <!-- Professional headshot in cozy setting -->
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400" 
+                         alt="Professional headshot" 
+                         class="w-24 h-24 rounded-full mx-auto shadow-md border-4 border-white object-cover">
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-heading font-bold text-cottage-brown mb-6">
+                    Hello, I'm <span class="text-dusty-rose">Sarah</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-cottage-brown/80 mb-8 leading-relaxed">
+                    Software Developer & Engineer crafting beautiful, functional experiences
+                </p>
+                <p class="text-lg text-cottage-brown/70 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Passionate about creating intuitive digital solutions that bring joy to users' lives, 
+                    with a love for clean code and thoughtful design.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#projects" class="bg-dusty-rose text-white px-8 py-3 rounded-full hover:bg-dusty-rose/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="bg-white text-dusty-rose border-2 border-dusty-rose px-8 py-3 rounded-full hover:bg-dusty-rose hover:text-white transition-all duration-300 shadow-lg">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-heading font-bold text-cottage-brown mb-6">About Me</h2>
+                    <div class="space-y-6 text-cottage-brown/80 leading-relaxed">
+                        <p>
+                            I'm a software developer with a passion for creating digital experiences that feel as warm and 
+                            inviting as a cottage garden. My journey began with a fascination for problem-solving and has 
+                            evolved into a love for crafting beautiful, functional applications.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me tending to my garden, reading by the fireplace, or exploring 
+                            nature trails. This connection to the natural world influences my approach to development – 
+                            creating solutions that are both sustainable and delightful.
+                        </p>
+                        <p>
+                            I believe in writing clean, maintainable code that grows gracefully over time, much like a 
+                            well-tended garden. My goal is to build applications that not only solve problems but also 
+                            bring a little joy to users' daily lives.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="/resume.pdf" download class="inline-flex items-center bg-sage-green text-white px-6 py-3 rounded-full hover:bg-sage-green/90 transition-all duration-300 shadow-lg">
+                            <i class="fas fa-download mr-2"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:order-first">
+                    <!-- Cozy workspace with natural elements -->
+                    <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Cozy workspace with plants and natural lighting" 
+                         class="rounded-2xl shadow-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-soft-gray">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-cottage-brown text-center mb-12">Skills & Technologies</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frontend -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-dusty-rose/10 hover:shadow-xl transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blush-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-paint-brush text-2xl text-blush-pink"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Frontend Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blush-pink/20 text-blush-pink px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-blush-pink/20 text-blush-pink px-3 py-1 rounded-full text-sm">Vue.js</span>
+                        <span class="bg-blush-pink/20 text-blush-pink px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-blush-pink/20 text-blush-pink px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                        <span class="bg-blush-pink/20 text-blush-pink px-3 py-1 rounded-full text-sm">SASS</span>
+                        <span class="bg-blush-pink/20 text-blush-pink px-3 py-1 rounded-full text-sm">Figma</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-dusty-rose/10 hover:shadow-xl transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-sage-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-server text-2xl text-sage-green"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Backend Development</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-sage-green/20 text-sage-green px-3 py-1 rounded-full text-sm">Node.js</span>
+                        <span class="bg-sage-green/20 text-sage-green px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-sage-green/20 text-sage-green px-3 py-1 rounded-full text-sm">Express</span>
+                        <span class="bg-sage-green/20 text-sage-green px-3 py-1 rounded-full text-sm">Django</span>
+                        <span class="bg-sage-green/20 text-sage-green px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-sage-green/20 text-sage-green px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-dusty-rose/10 hover:shadow-xl transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-muted-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-tools text-2xl text-muted-terracotta"></i>
+                        </div>
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Tools & DevOps</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-muted-terracotta/20 text-muted-terracotta px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-muted-terracotta/20 text-muted-terracotta px-3 py-1 rounded-full text-sm">Docker</span>
+                        <span class="bg-muted-terracotta/20 text-muted-terracotta px-3 py-1 rounded-full text-sm">AWS</span>
+                        <span class="bg-muted-terracotta/20 text-muted-terracotta px-3 py-1 rounded-full text-sm">CI/CD</span>
+                        <span class="bg-muted-terracotta/20 text-muted-terracotta px-3 py-1 rounded-full text-sm">Jest</span>
+                        <span class="bg-muted-terracotta/20 text-muted-terracotta px-3 py-1 rounded-full text-sm">Webpack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-heading font-bold text-cottage-brown text-center mb-12">Featured Projects</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-dusty-rose/10 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                    <!-- Minimalist app interface -->
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                         alt="Clean and modern web application interface" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Garden Planner App</h3>
+                        <p class="text-cottage-brown/70 mb-4 leading-relaxed">
+                            A React-based application that helps users plan and track their garden layouts, 
+                            with features for crop rotation, seasonal planning, and harvest tracking.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blush-pink/20 text-blush-pink px-2 py-1 rounded text-sm">React</span>
+                            <span class="bg-blush-pink/20 text-blush-pink px-2 py-1 rounded text-sm">Node.js</span>
+                            <span class="bg-blush-pink/20 text-blush-pink px-2 py-1 rounded text-sm">MongoDB</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-dusty-rose/10 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                    <!-- Recipe book app design -->
+                    <img src="https://images.unsplash.com/photo-1512317049220-d3c6fcaf6681?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                         alt="Digital recipe book application with warm design" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Cozy Recipe Keeper</h3>
+                        <p class="text-cottage-brown/70 mb-4 leading-relaxed">
+                            A digital cookbook that brings the warmth of handwritten recipes to the digital age, 
+                            with family sharing features and ingredient shopping lists.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-sage-green/20 text-sage-green px-2 py-1 rounded text-sm">Vue.js</span>
+                            <span class="bg-sage-green/20 text-sage-green px-2 py-1 rounded text-sm">Python</span>
+                            <span class="bg-sage-green/20 text-sage-green px-2 py-1 rounded text-sm">PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-dusty-rose/10 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                    <!-- Wellness tracking app -->
+                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                         alt="Wellness and mindfulness app interface" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Mindful Moments</h3>
+                        <p class="text-cottage-brown/70 mb-4 leading-relaxed">
+                            A mindfulness and wellness tracking app with gentle reminders, mood tracking, 
+                            and nature-inspired meditation guides for daily well-being.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-muted-terracotta/20 text-muted-terracotta px-2 py-1 rounded text-sm">React Native</span>
+                            <span class="bg-muted-terracotta/20 text-muted-terracotta px-2 py-1 rounded text-sm">Express</span>
+                            <span class="bg-muted-terracotta/20 text-muted-terracotta px-2 py-1 rounded text-sm">SQLite</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-2xl shadow-lg border border-dusty-rose/10 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                    <!-- Library management system -->
+                    <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" 
+                         alt="Digital library management system interface" 
+                         class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-semibold text-cottage-brown mb-2">Village Library System</h3>
+                        <p class="text-cottage-brown/70 mb-4 leading-relaxed">
+                            A community library management system with book lending, reading recommendations, 
+                            and social features that bring the community together around books.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blush-pink/20 text-blush-pink px-2 py-1 rounded text-sm">Django</span>
+                            <span class="bg-blush-pink/20 text-blush-pink px-2 py-1 rounded text-sm">JavaScript</span>
+                            <span class="bg-blush-pink/20 text-blush-pink px-2 py-1 rounded text-sm">PostgreSQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                            <a href="#" class="text-dusty-rose hover:text-dusty-rose/80 transition-colors">
+                                <i class="fab fa-github mr-1"></i> Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-soft-gray">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-heading font-bold text-cottage-brown mb-6">Let's Connect</h2>
+            <p class="text-xl text-cottage-brown/70 mb-12 leading-relaxed">
+                I'd love to hear about your project and discuss how we can bring your ideas to life. 
+                Whether it's a new venture or an existing project that needs a gentle touch, let's chat!
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Email -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-dusty-rose/10 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-dusty-rose/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-dusty-rose"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-cottage-brown mb-2">Email</h3>
+                    <p class="text-cottage-brown/70">hello@sarahdeveloper.com</p>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-dusty-rose/10 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-sage-green/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-linkedin text-2xl text-sage-green"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-cottage-brown mb-2">LinkedIn</h3>
+                    <p class="text-cottage-brown/70">/in/sarahdeveloper</p>
+                </div>
+
+                <!-- GitHub -->
+                <div class="bg-white rounded-2xl p-6 shadow-lg border border-dusty-rose/10 hover:shadow-xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-muted-terracotta/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-github text-2xl text-muted-terracotta"></i>
+                    </div>
+                    <h3 class="text-lg font-heading font-semibold text-cottage-brown mb-2">GitHub</h3>
+                    <p class="text-cottage-brown/70">@sarahcodes</p>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="w-12 h-12 bg-dusty-rose text-white rounded-full flex items-center justify-center hover:bg-dusty-rose/90 transition-all duration-300 hover:scale-110">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-sage-green text-white rounded-full flex items-center justify-center hover:bg-sage-green/90 transition-all duration-300 hover:scale-110">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="w-12 h-12 bg-muted-terracotta text-white rounded-full flex items-center justify-center hover:bg-muted-terracotta/90 transition-all duration-300 hover:scale-110">
+                    <i class="fab fa-dribbble"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cottage-brown text-warm-cream py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex justify-center items-center mb-4">
+                    <!-- Decorative natural element -->
+                    <img src="https://pixabay.com/get/g01ad711854ca3a71164eccf8b8ab6d3a6dcf0f993742f48d47fd2d7a222b4ab9e3cce7f3d5e00134f90b2a82797bc0e8f48d44a53a66639360e9abaf889b4cc8_1280.jpg" 
+                         alt="Subtle natural branch decoration" 
+                         class="w-12 h-6 opacity-50">
+                </div>
+                <p class="text-warm-cream/80 mb-2">© 2024 Sarah Developer. Crafted with care and cottage charm.</p>
+                <p class="text-warm-cream/60 text-sm">Built with love, nature inspiration, and lots of tea ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        (function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add scroll effect to navigation
+            window.addEventListener('scroll', function() {
+                const nav = document.querySelector('nav');
+                if (window.scrollY > 50) {
+                    nav.classList.add('shadow-lg');
+                } else {
+                    nav.classList.remove('shadow-lg');
+                }
+            });
+
+            // Mobile menu toggle (basic implementation)
+            const mobileMenuButton = document.querySelector('nav button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle functionality
+                    console.log('Mobile menu clicked - implement toggle logic');
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>
